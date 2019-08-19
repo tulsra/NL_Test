@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C259366230A532B0046D3C3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259362230A532B0046D3C3 /* Reachability.swift */; };
+		8C259367230A532B0046D3C3 /* APIWrapperExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259363230A532B0046D3C3 /* APIWrapperExtention.swift */; };
+		8C259368230A532B0046D3C3 /* APIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259364230A532B0046D3C3 /* APIWrapper.swift */; };
+		8C259369230A532B0046D3C3 /* FileUploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259365230A532B0046D3C3 /* FileUploadManager.swift */; };
 		8C4087C522F2987000801213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4087C422F2987000801213 /* AppDelegate.swift */; };
 		8C4087C722F2987000801213 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4087C622F2987000801213 /* ViewController.swift */; };
 		8C4087CA22F2987000801213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4087C822F2987000801213 /* Main.storyboard */; };
@@ -59,6 +63,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C259362230A532B0046D3C3 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		8C259363230A532B0046D3C3 /* APIWrapperExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIWrapperExtention.swift; sourceTree = "<group>"; };
+		8C259364230A532B0046D3C3 /* APIWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIWrapper.swift; sourceTree = "<group>"; };
+		8C259365230A532B0046D3C3 /* FileUploadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUploadManager.swift; sourceTree = "<group>"; };
 		8C4087C122F2987000801213 /* NLTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4087C422F2987000801213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C4087C622F2987000801213 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +189,10 @@
 			children = (
 				8C4087EC22F2B56100801213 /* NetworkManager.swift */,
 				8C4087ED22F2B56100801213 /* NetworkRouter.swift */,
+				8C259362230A532B0046D3C3 /* Reachability.swift */,
+				8C259364230A532B0046D3C3 /* APIWrapper.swift */,
+				8C259363230A532B0046D3C3 /* APIWrapperExtention.swift */,
+				8C259365230A532B0046D3C3 /* FileUploadManager.swift */,
 				8C4087EA22F2B56100801213 /* ParameterEncoding.swift */,
 				8C4087EB22F2B56100801213 /* ApiEndPoint.swift */,
 			);
@@ -344,6 +356,7 @@
 				8C4087F722F2BB6A00801213 /* EncodableExtension.swift in Sources */,
 				8C40881222F2BC5B00801213 /* ImmutableMappable.swift in Sources */,
 				8C40882822F2C08A00801213 /* DateFormatterTransform.swift in Sources */,
+				8C259368230A532B0046D3C3 /* APIWrapper.swift in Sources */,
 				8C40881F22F2BC5B00801213 /* TransformOf.swift in Sources */,
 				8C40882022F2BC5B00801213 /* IntegerOperators.swift in Sources */,
 				8C40880F22F2BC5B00801213 /* DictionaryTransform.swift in Sources */,
@@ -354,7 +367,9 @@
 				8C4087E722F2B06B00801213 /* LaunchTableViewCell.swift in Sources */,
 				8C40881022F2BC5B00801213 /* Mapper.swift in Sources */,
 				8C40880D22F2BC5B00801213 /* MapError.swift in Sources */,
+				8C259367230A532B0046D3C3 /* APIWrapperExtention.swift in Sources */,
 				8C40880E22F2BC5B00801213 /* ISO8601DateTransform.swift in Sources */,
+				8C259369230A532B0046D3C3 /* FileUploadManager.swift in Sources */,
 				8C4087F422F2B9DD00801213 /* ParameterDetail.swift in Sources */,
 				8C4087EE22F2B56100801213 /* ParameterEncoding.swift in Sources */,
 				8C40881B22F2BC5B00801213 /* EnumTransform.swift in Sources */,
@@ -365,6 +380,7 @@
 				8C40881E22F2BC5B00801213 /* TransformType.swift in Sources */,
 				8C40882622F2C06A00801213 /* CustomDateFormatTransform.swift in Sources */,
 				8C40881C22F2BC5B00801213 /* ToJSON.swift in Sources */,
+				8C259366230A532B0046D3C3 /* Reachability.swift in Sources */,
 				8C4087C522F2987000801213 /* AppDelegate.swift in Sources */,
 				8C40881322F2BC5B00801213 /* TransformOperators.swift in Sources */,
 				8C40881A22F2BC5B00801213 /* Map.swift in Sources */,

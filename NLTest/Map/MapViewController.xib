@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="DTD_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="dateChangerView" destination="zZG-dq-TO3" id="rSb-sZ-C4j"/>
+                <outlet property="mapView" destination="b0P-98-NKp" id="pbF-fe-w79"/>
+                <outlet property="view" destination="qPj-do-erk" id="CXQ-0h-Hhx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qPj-do-erk">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZG-dq-TO3" customClass="DateChangeView" customModule="DTD_iOS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="MQg-GR-8Lp"/>
+                        <constraint firstAttribute="height" constant="50" id="qBp-yg-jH3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="viewType" value="Orders Map"/>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="MQg-GR-8Lp"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="MQg-GR-8Lp"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIz-RB-pqF">
+                    <rect key="frame" x="0.0" y="50" width="414" height="846"/>
+                    <subviews>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="b0P-98-NKp">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="846"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Z2m-32-Eq8"/>
+                            </connections>
+                        </mapView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="b0P-98-NKp" secondAttribute="bottom" id="b7H-8B-ZhE"/>
+                        <constraint firstAttribute="trailing" secondItem="b0P-98-NKp" secondAttribute="trailing" id="hzM-0Y-GZY"/>
+                        <constraint firstItem="b0P-98-NKp" firstAttribute="top" secondItem="LIz-RB-pqF" secondAttribute="top" id="jHQ-oA-e2U"/>
+                        <constraint firstItem="b0P-98-NKp" firstAttribute="leading" secondItem="LIz-RB-pqF" secondAttribute="leading" id="orl-58-Fv5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.89931046962738037" green="0.93610543012619019" blue="0.94973868131637573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LIz-RB-pqF" firstAttribute="leading" secondItem="vde-jc-O1p" secondAttribute="leading" id="4fB-Me-xjR"/>
+                <constraint firstItem="LIz-RB-pqF" firstAttribute="trailing" secondItem="vde-jc-O1p" secondAttribute="trailing" id="7nv-xv-yyR"/>
+                <constraint firstItem="zZG-dq-TO3" firstAttribute="leading" secondItem="vde-jc-O1p" secondAttribute="leading" id="FDa-4r-A6S"/>
+                <constraint firstItem="zZG-dq-TO3" firstAttribute="top" secondItem="qPj-do-erk" secondAttribute="top" id="V0T-OM-8zR"/>
+                <constraint firstItem="zZG-dq-TO3" firstAttribute="trailing" secondItem="vde-jc-O1p" secondAttribute="trailing" id="f41-Qw-uaJ"/>
+                <constraint firstAttribute="bottom" secondItem="LIz-RB-pqF" secondAttribute="bottom" id="tfQ-bZ-TrR"/>
+                <constraint firstItem="LIz-RB-pqF" firstAttribute="top" secondItem="zZG-dq-TO3" secondAttribute="bottom" id="wfU-WB-RQe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vde-jc-O1p"/>
+            <point key="canvasLocation" x="168.11594202898553" y="58.928571428571423"/>
+        </view>
+    </objects>
+</document>
